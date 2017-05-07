@@ -1,0 +1,11 @@
+version: '2'
+services:
+  3proxy:
+    build:
+      context: ./workspace
+      args:        
+        - LOGIN=user
+        - PASSWORD=password                
+      dockerfile: "Dockerfile"    
+    ports:
+      - 48080:3128
