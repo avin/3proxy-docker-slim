@@ -26,7 +26,7 @@ Requires=docker.service
 
 [Service]
 ExecStart=/usr/local/bin/docker-compose -f /opt/3proxy-docker-slim/docker-compose.yml up --build
-ExecStop=/usr/local/bin/docker-compose -f /opt/3proxy-docker-slim/docker-compose.yml stop
+ExecStop=/usr/local/bin/docker-compose -f /opt/3proxy-docker-slim/docker-compose.yml stop -t 2
 
 [Install]
 WantedBy=multi-user.target  

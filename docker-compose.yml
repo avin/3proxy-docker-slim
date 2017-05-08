@@ -1,6 +1,6 @@
 version: '2'
 services:
-  3proxy:
+  main:
     build:
       context: ./workspace
       args:        
