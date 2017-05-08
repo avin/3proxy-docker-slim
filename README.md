@@ -17,7 +17,7 @@ mkdir /opt && cd /opt
 git clone https://github.com/avin/3proxy-docker-slim.git
 ``` 
 
-Create `/etc/systemd/system/3proxy.service`
+Create `/etc/systemd/system/3proxy-docker.service`
 ```
 [Unit]
 Description=3proxy Service  
@@ -34,7 +34,7 @@ WantedBy=multi-user.target
 
 Install service
 ```
-systemctl enable 3proxy.service
+systemctl enable 3proxy-docker.service
 ```
 
 Enjoy!
